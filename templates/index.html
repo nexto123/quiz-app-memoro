@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div class="ready-container text-center">
+    <form  action="{{ url_for('welcome') }}" class="form-class"  method="POST">
+        
+        <input class="form-control-lg p-3 answer" type="text" name="username" id="question_index">
+        
+          <button type="submit" class="btn btn-success btn-lg rounded-pill">Register to Start</button>
+  
+    </form>
+</div>    
+{% endblock %}    
