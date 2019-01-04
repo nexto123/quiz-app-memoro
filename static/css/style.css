@@ -1,0 +1,160 @@
+
+body{
+   background-color: rgba(220, 248, 236, 0.39); 
+   height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 ,
+p,
+a{
+  font-family:'lato', sans-serif;
+  font-weight: 600 !important;
+}
+
+.navbar{
+    background-color: #2dcc9a;
+}
+.navbar-brand{
+    color: #ffffff;
+}
+
+.answer{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 680px;
+    min-width: 50px;
+
+}
+
+.question-number{
+    color: #2196F3;
+}
+
+img{
+    position: relative;
+    top: 50px;
+    margin-bottom: 300px;
+    max-height: 420px;
+    max-width: 680px;
+}
+
+.fa-caret-right{
+    position: relative;
+    top: 2px;
+    color: #ffffff;
+    margin: 10px 10px;
+}
+.score-index{
+    text-decoration: none;
+}
+
+.question-index{
+    position: relative;
+    font-weight: 100;
+}
+
+.form-container{
+    position: relative;
+    bottom: 280px;
+    max-width: 680px;
+}
+
+.alert-success {
+    font-family: sans-serif;
+    background-color: #dff0d8;
+    border-color: #dff0d8;
+    color: #3c763d;
+    width: fit-content;
+    margin: auto;
+    max-width: 700px;
+    bottom: 300px;
+
+}
+.alert-danger {
+    font-family: sans-serif;
+    background-color: #f2dede;
+    border-color: #ffffff;
+    color: #a94442;
+    max-width: 700px;
+    margin: auto;
+    bottom: 300px;
+}
+.flash-button{
+    padding-left: 5px;
+}
+
+.login-input{
+    height: 50px;
+    border: 1px solid rgba(131, 137, 138, 0.3);
+    border-radius: 5px;
+    max-width: 100%;
+    width: 50%;
+    margin: 25px 25px;
+}
+.welcome{
+    position: relative;
+    top: 200px;
+    margin-bottom: 400px;
+    font-family: fantasy;
+}
+.fa-gamepad{
+    position: relative;
+    top: 35px;
+    font-size: 500%;
+    color: #b900ff;
+}
+.fal{
+    color: red;
+}
+/*-----------------Buttons----*/
+
+button.block{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    background-color: #2ecb9a;
+    border: 1px solid #2dcc1a;
+    max-width: 680px;
+    min-width: 50px
+}
+
+button.block:hover{
+    background-color: #59c193;
+}
+
+.play-button{
+    margin: auto;
+    margin-top: 55px;
+    text-decoration: none;
+} 
+
+footer{
+    clear: both;
+    position: relative;
+    margin-bottom: -100%;
+    top: 100px;
+    background-color: #2dcc9a;
+}
+.special{
+    width: fit-content;
+}
+
+.bus{
+    position: relative;
+    top: 100px;
+    margin-bottom: 600px;
+}
+.spukie {
+    position: relative;
+    top: 0px;
+}
+/*------ media Queries  -------*/

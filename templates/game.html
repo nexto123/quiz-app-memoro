@@ -1,10 +1,57 @@
 {% extends 'base.html'%}
 
 {% block content %}
+
+<section>
 <div class="ready-container text-center">
-    <section>
-        <p>no questions yet!</p>
-        <img src="#">
-    </section>
-</div>    
-{% endblock %}    
+  <br>
+    <br>
+      <br>
+        <h2 class="question_index question-number">Question Number: {{ game_on["index"] + 1 }}</h2>
+        <br>
+        <p class="question_index">Your Current Score is:{{ score }}</p>
+        <br>
+            <h3 class="text-center">{{ game_on['actual_question']}}</h3>
+      
+              <br> 
+              <i class="fal fa-arrow-alt-left"></i>
+                <img class="rounded mx-auto d-block img-fluid" src="{{ game_on['question_image'] }}">
+                <i class="fal fa-arrow-alt-right"></i>
+                <br>
+            <br>
+  <!----- Flash messages ---->   
+{% with messages = get_flashed_messages(with_categories=true) %} 
+{% for category, message in messages %}
+    {% if category == 'error' %}
+     <div class="messages alert text-center alert-danger" role="alert">
+         <button type="button" class="fade close flash-button" data-dismiss="alert" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>Whoops!</strong> {{ message }}
+        </div>
+        {% else %}
+        <div class="messages alert text-center alert-success" role="alert">
+            <button type="button" class="fade close" data-dismiss="alert" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+     <strong>Woah!</strong> {{ message }}
+    </div>
+   {% endif %} 
+ {% endfor %}
+{% endwith %}
+    <!-----To be revisited---->
+<div class="container text-center form-container">  
+<form  action="{{ url_for('game') }}" class="form-class"  method="POST">
+    <div class="container"> 
+        <input type="hidden" name="question_number" value="{{ game_on["index"] }}">
+        <input type="hidden" name="score_value" value="{{ game_on["index"] }}">
+        <input type="hidden" name="actual_answer" value="{{ game_on["question_answer"] }}">
+        <input class="form-control-lg answer" type="text" name="submitted_answer" id="question_index">
+            <button type="submit" class="btn btn-success btn-lg rounded block">Check Answer</button>
+            </div>
+        </form>
+      </div>
+    </div> 
+  </div>
+</section>
+{% endblock %}

@@ -1,16 +1,24 @@
 {% extends 'base.html'%}
 
 {% block content %}
+<div class="container welcome">
 <div class="ready-container text-center">
     
-    <h1>Welcome!! {{username}}. Shall we begin </h1>
-    <h3>Click the button below to start</h3>
+    <h3 style="font-weight:100;" >welcome,  {{username}} </h3>
+    <h4 >Click the button below to start</h4>
     <br>
     <br>
-    
-    <form  action="{{ url_for('game') }}" class="form-class"  method="POST">
-    <button type="submit" class="btn btn-success btn-lg rounded-pill">Start Game</button>
-    </form>
-    
-</div>    
+ </div>
+ <div class="container text-center form-container ">  
+      <form  action="{{ url_for('game') }}" class="form-class" method="GET">
+        <div class="container .spukie" style="top:300px;"> 
+            <button type="submit" class="btn btn-success btn-lg rounded block"> Start Game</button>
+            </div>
+        </form>
+      </div>
+      <br>
+      <br>
+      <br>
+</div> 
+
 {% endblock %}    
