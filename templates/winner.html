@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<section class="section">
+<div class="container welcome">
+<!------------flash message--->
+<div class="text-center">
+    <br>
+      <h3>Excellent!! Now enter your *nickname to be added to the score board.</h3>
+        <br>
+          <br>
+            <form  action="{{ url_for('score_board') }}" class="form-class"  method="POST">
+          <div class="container special">
+        <input class="form-control-lg answer" type="text" name="nickname" placeholder="enter nickname"> <button type="submit" class="btn btn-success btn-lg rounded-pill block">add to score board</button>
+          </div>
+     </form>
+     </div>
+     {% with messages = get_flashed_messages() %}
+   {% if messages %}
+      {% for message in messages %}
+        <div class="messages alert alert-danger" role="alert">
+           <strong>Error: </strong> {{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+   </div>
+  </section>
+{% endblock %}

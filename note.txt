@@ -1,0 +1,3 @@
+#note to self
+>>try various function indentation
+>>i introduced the concept of closure function 

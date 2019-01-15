@@ -7,14 +7,15 @@
   <br>
     <br>
       <br>
-        <h2 class="question_index text-white">   </h2>
+      <h2 class="question_index text-black">Awesome, <strong class="text-success" style="font-size: 200%; font-weight: 200;">{{nickname}}</strong>  You've made it to the score board.   </h2>
+      <br>
+      <br>
+      <div class="container">
+      {% for winners in game_winners %}
+        <p class="text-center text-success jumbotron"><strong>{{ winners }}  </strong><img class="rounded mx-auto d-block img-fluid" src="https://i.pinimg.com/originals/3a/8b/fa/3a8bfaa6b41e4e78866a99ee5e9ab703.png" style="width:18px; height:30px;"></p>
+        {% endfor %}
         <br>
-            <h3 class="text-center">{{ username }}</h3>
-      
-              
-  <!----- Flash messages ---->   
-
-
+    </div>
   </div>
 </section>
 {% endblock %}

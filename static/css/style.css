@@ -1,7 +1,6 @@
 
 body{
    background-color: rgba(220, 248, 236, 0.39); 
-   height: 100%;
 }
 
 h1,
@@ -14,6 +13,10 @@ p,
 a{
   font-family:'lato', sans-serif;
   font-weight: 600 !important;
+}
+
+.section{
+    height: 100vh;
 }
 
 .navbar{
@@ -38,6 +41,8 @@ a{
 .question-number{
     color: #2196F3;
 }
+/*-----------------images ------------*/
+
 
 img{
     position: relative;
@@ -131,18 +136,12 @@ button.block:hover{
     background-color: #59c193;
 }
 
-.play-button{
-    margin: auto;
-    margin-top: 55px;
-    text-decoration: none;
-} 
-
 footer{
     clear: both;
     position: relative;
-    margin-bottom: -100%;
     top: 100px;
     background-color: #2dcc9a;
+    margin-bottom: -100%;
 }
 .special{
     width: fit-content;
@@ -157,4 +156,18 @@ footer{
     position: relative;
     top: 0px;
 }
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    border-radius: 10%;
+    height: 180px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.clue{
+    color: red;
+}
+
 /*------ media Queries  -------*/

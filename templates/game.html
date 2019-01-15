@@ -9,12 +9,11 @@
       <br>
         <h2 class="question_index question-number">Question Number: {{ game_on["index"] + 1 }}</h2>
         <br>
-        <p class="question_index">Your Current Score is:{{ score }}</p>
+        <p class="question_index win "><span style="font-size: 300%; font-weight: 300;">{{ score }} </span><span class="text-success">wins</span></p>
         <br>
             <h3 class="text-center">{{ game_on['actual_question']}}</h3>
-      
               <br> 
-              <i class="fal fa-arrow-alt-left"></i>
+              <!---<p class="text-center clue ">{{ game_on['question_answer'] }}</p>-->
                 <img class="rounded mx-auto d-block img-fluid" src="{{ game_on['question_image'] }}">
                 <i class="fal fa-arrow-alt-right"></i>
                 <br>
@@ -27,14 +26,14 @@
          <button type="button" class="fade close flash-button" data-dismiss="alert" aria-label="close">
         <span aria-hidden="true">&times;</span>
             </button>
-            <strong>Whoops!</strong> {{ message }}
+            {{ message }}
         </div>
         {% else %}
         <div class="messages alert text-center alert-success" role="alert">
             <button type="button" class="fade close" data-dismiss="alert" aria-label="close">
         <span aria-hidden="true">&times;</span>
     </button>
-     <strong>Woah!</strong> {{ message }}
+     <strong>Wonderful!</strong> {{ message }}
     </div>
    {% endif %} 
  {% endfor %}
@@ -44,7 +43,7 @@
 <form  action="{{ url_for('game') }}" class="form-class"  method="POST">
     <div class="container"> 
         <input type="hidden" name="question_number" value="{{ game_on["index"] }}">
-        <input type="hidden" name="score_value" value="{{ game_on["index"] }}">
+        <input type="hidden" name="score_value" value="{{ score}}">
         <input type="hidden" name="actual_answer" value="{{ game_on["question_answer"] }}">
         <input class="form-control-lg answer" type="text" name="submitted_answer" id="question_index">
             <button type="submit" class="btn btn-success btn-lg rounded block">Check Answer</button>
