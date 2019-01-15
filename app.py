@@ -49,7 +49,7 @@ def game():
             question_number += 1
         else:
             question_number -= 0
-        if question_number == 3:
+        if question_number == 10:
             return redirect(url_for('winner'))
         game_on = load_question(question_number)
     
@@ -65,10 +65,9 @@ def score_board():
     nickname = request.form.get('nickname')
     if request.method == 'POST':
         nickname = request.form.get('nickname')
-        if nickname != None and request.method == 'POST':
+        if nickname != '' or None:
             with open('data/winner.txt', 'a') as champion:
                 champion.write('\n{}'.format(str(nickname)))
-            
         else:
             flash('please add a nickname', 'error')
             return redirect(url_for('winner'))
