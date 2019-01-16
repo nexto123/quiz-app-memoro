@@ -16,6 +16,17 @@ This app employs the use of dictionaries, loops and some templating,
 which is easily propagated through the flask framework. 
 After a user answers all questions they make their way unto the scoreboard.
 
+##### Technologies:
+This app was created using the python Flask micro-framework for the back-end engine.
+By the use of various flask extensions, automation can easily be achieved. In this project i employed these extension:
+Flask==1.0.2
+Jinja2==2.10
+MarkupSafe==1.0
+Werkzeug==0.14.1
+click==6.7
+itsdangerous==0.24
+For the front-end i used HTML5, bootstrap4 and CSS3.
+
 ======
 
 #### Live version: https://quizz-test.herokuapp.com/
