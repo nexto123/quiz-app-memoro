@@ -19,8 +19,6 @@ question whiles keeping track of their score.
 If a user gets an answer wrong the question is repeated, after 3 wrong tries the answer will be displayed along with the flash for the user.
 After the questions are exhausted, the user is finally asked to enter a nickname to be added to the scoreboard.
 The user won't be added to the scoreboard until they add a nickname.
-I also employed the python extension Request, as it simplifies html requests.
-
 After a user answers all questions they make their way unto the scoreboard.
 
 ##### Technologies:
@@ -35,7 +33,15 @@ click==6.7
 itsdangerous==0.24
 For the Front-end technologies, I used HTML5, bootstrap4 and CSS3.
 
-##### Technologies:
+
+##### Deployment:
+After several commits, i decided to deploy to heroku.
+The initial error were due to the requirements.txt file which my master push message rejected. This was due to errors i found was caused by pip not being able to install all the extensions on the requirement.txt file. I later found a work around afterwards and it worked. Also the procfile is one that is ussually forgotten and must be added, else heroku will keep rejecting push requests.
+
+
+
+
+##### Testing:
 
 When a user clicks the scoreboard directly, they as guests who haven't attempted the game will still be greeted by the scoreboard message which is meant for the successful players. This yet to be fixed. Perhaps a template logic to redirect users to the index page after a while to enable them take the quiz.
 
