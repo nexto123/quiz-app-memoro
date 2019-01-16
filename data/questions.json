@@ -1,13 +1,13 @@
 [
 {
   "index":0,
-  "actual_question":"Where is this monument be called?",
+  "actual_question":"What is this monument called?",
   "question_image":"https://static.b-europe.com/-/media/MediaRepository/Images_LowRes/Destinations/FR/Paris/700x432_parijs_city_2.ashx?h=432&la=en&w=700&hash=D6016E9745E26CB8056EB1BE092BE7906A07F185",
   "question_answer":"eiffel tower"
    },
   {
   "index":1,
-  "actual_question":"What language does this logo represent?",
+  "actual_question":"What programming language does this logo represent?",
   "question_image":"https://cdn-images-1.medium.com/max/2000/1*ueWmI48uuShON-hX7LwI0w.png",
   "question_answer":"python"
    },
@@ -19,7 +19,7 @@
    },
   {
   "index":3,
-  "actual_question":"How many planets are there?",
+  "actual_question":"How many planets are there in the universe?",
   "question_image":"http://stargazinghub.com/wp-content/uploads/2017/12/how-many-planets-are-there.jpg",
   "question_answer":"9"
    },
@@ -37,7 +37,7 @@
    },
   {
   "index":6,
-  "actual_question":"Which American state would you find this sign board?",
+  "actual_question":"Which American State would you find this sign board?",
   "question_image":"https://www.thestudentmovers.com/wp-content/uploads/2016/11/hollwood-big-board.jpg",
   "question_answer":"california"
    },

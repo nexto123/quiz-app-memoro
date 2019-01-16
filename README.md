@@ -1,14 +1,14 @@
-#Memoro Quiz App
+# Memoro Quiz App
 
 
 
 **This is a Code Institute project.**
 
-#####*Author: Ernest bruce brown*
+##### *Author: Ernest bruce brown*
 
 ---
 
-#####Description:
+##### Description:
 
 >This is a simple python quiz app written in the Flask framework.
 It simply compares two instances and returns a feedback to the user.
@@ -18,9 +18,9 @@ After a user answers all questions they make their way unto the scoreboard.
 
 ======
 
-####Live version:
+#### Live version:
 
-#####Sources:
+##### Sources:
 
 
 
@@ -33,7 +33,7 @@ Google images, google fonts
 
 
  
- *Disclaimers:
+ * Disclaimers:
  
  
  >*Images and fonts were only borrowed

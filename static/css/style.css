@@ -18,6 +18,11 @@ a{
 .section{
     height: 100vh;
 }
+ul, li{
+    color: #839492f0;
+    text-decoration: none;
+    list-style-type: none;
+}
 
 .navbar{
     background-color: #2dcc9a;
@@ -73,6 +78,9 @@ img{
     max-width: 680px;
 }
 
+
+/*-----------------Alerts ------------*/
+
 .alert-success {
     font-family: sans-serif;
     background-color: #dff0d8;
@@ -80,7 +88,7 @@ img{
     color: #3c763d;
     width: fit-content;
     margin: auto;
-    max-width: 700px;
+    max-width: 500px;
     bottom: 300px;
 
 }
@@ -89,7 +97,7 @@ img{
     background-color: #f2dede;
     border-color: #ffffff;
     color: #a94442;
-    max-width: 700px;
+    max-width: 500px;
     margin: auto;
     bottom: 300px;
 }
@@ -111,12 +119,7 @@ img{
     margin-bottom: 400px;
     font-family: fantasy;
 }
-.fa-gamepad{
-    position: relative;
-    top: 35px;
-    font-size: 500%;
-    color: #b900ff;
-}
+
 .fal{
     color: red;
 }
@@ -169,5 +172,9 @@ footer{
 .clue{
     color: red;
 }
+/*------ actual_answer styled  -------*/
+em {
+    font-size: 20px;
+    color: black;
+}
 
-/*------ media Queries  -------*/

@@ -26,14 +26,14 @@
          <button type="button" class="fade close flash-button" data-dismiss="alert" aria-label="close">
         <span aria-hidden="true">&times;</span>
             </button>
-            {{ message }}
+            {{ message | safe }}
         </div>
         {% else %}
         <div class="messages alert text-center alert-success" role="alert">
             <button type="button" class="fade close" data-dismiss="alert" aria-label="close">
         <span aria-hidden="true">&times;</span>
     </button>
-     <strong>Wonderful!</strong> {{ message }}
+     <strong>Wonderful!</strong> {{ message | safe }}
     </div>
    {% endif %} 
  {% endfor %}
@@ -42,6 +42,7 @@
 <div class="container text-center form-container">  
 <form  action="{{ url_for('game') }}" class="form-class"  method="POST">
     <div class="container"> 
+        <input type="hidden" name="attempt" value="{{ attempt }}">
         <input type="hidden" name="question_number" value="{{ game_on["index"] }}">
         <input type="hidden" name="score_value" value="{{ score}}">
         <input type="hidden" name="actual_answer" value="{{ game_on["question_answer"] }}">
