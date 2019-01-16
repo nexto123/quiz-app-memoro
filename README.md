@@ -16,7 +16,7 @@ It simply accepts post requests instances and returns a feedback to the user.
 Questions and images are looped from the json file and displayed by the view to the user. 
 if a user gets a question correct, it flashes the appropriate responds and moves to the next 
 question whiles keeping track of their score. 
-If a user gets an answer wrong the question is repeated, after 3 wrong tries the answer will be displayed along with the flash for the user.
+If a user gets an answer wrong the question is repeated, after 3 wrong tries the answer will be displayed along with the flash for the user. I made it so as to not leave users frustrayed.
 After the questions are exhausted, the user is finally asked to enter a nickname to be added to the scoreboard.
 The user won't be added to the scoreboard until they add a nickname.
 After a user answers all questions they make their way unto the scoreboard.
