@@ -18,7 +18,7 @@ After a user answers all questions they make their way unto the scoreboard.
 
 ======
 
-#### Live version:
+#### Live version: https://quizz-test.herokuapp.com/
 
 ##### Sources:
 
