@@ -21,6 +21,11 @@ After the questions are exhausted, the user is finally asked to enter a nickname
 The user won't be added to the scoreboard until they add a nickname.
 After a user answers all questions they make their way unto the scoreboard.
 
+1. Welcome page > which is the index page.
+2. Game page > questioning page.
+3. winner page > username is required to move on.
+4. Score board > winners are added permanently.
+
 ##### Technologies:
 
 This app was created using the python Flask micro-framework for the back-end automation.
