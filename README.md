@@ -36,6 +36,7 @@ MarkupSafe==1.0
 Werkzeug==0.14.1
 click==6.7
 itsdangerous==0.24
+
 For the Front-end technologies, I used HTML5, bootstrap4 and CSS3.
 
 
