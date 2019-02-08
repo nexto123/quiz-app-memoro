@@ -8,7 +8,7 @@
 
 ---
 
-##### Description:
+<h2>Description:</h2>
 
 This is a simple python quiz app written in the Flask framework.
 I decided to call it memoro, from the word memory.
