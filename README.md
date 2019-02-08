@@ -26,7 +26,7 @@ After a user answers all questions they make their way unto the scoreboard.
 3. winner page > username of players is requested to move on.
 4. Score board > winners are added permanently.
 
-<h1>Technologies:</h1>
+<h2>Technologies:</h2>
 
 This app was created using the python Flask micro-framework for the back-end automation.
 By the use of various flask extensions, automation can easily be achieved. These are are some flask extensions i used:
